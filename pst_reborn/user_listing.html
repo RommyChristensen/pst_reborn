@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User - View Listing</title>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta charset="utf-8" />
+    <title>Pages - Admin Dashboard UI Kit - Lock Screen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+    <link rel="apple-touch-icon" href="pages/ico/60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="pages/ico/76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="pages/ico/120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="pages/ico/152.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/bootstrapv3/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/jquery-datatable/media/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/jquery-datatable/extensions/FixedColumns/css/dataTables.fixedColumns.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/datatables-responsive/css/datatables.responsive.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="pages/css/pages-icons.css" rel="stylesheet" type="text/css">
+    <link class="main-stylesheet" href="pages/css/pages.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="fixed-header">
+
+    <div class="header bg-info-dark">
+      <div class="container-fluid relative">
+        <div class="pull-left hidden-md hidden-lg m-t-10 m-r-15">
+          <a href="user.html"><img src="assets/img/dashboardinactive.png" /></a>
+        </div>
+        <div class="pull-left sm-table hidden-xs hidden-sm m-t-10 m-r-15">
+          <a href="user.html"><img src="assets/img/dashboardinactive.png" /></a>
+        </div>
+
+        <div class="pull-left m-t-20 m-r-10">
+          <a href="user_search.html" class="text-white m-l-10"><span class="pg-search"></span> Search</a>
+          <a href="user_create_listing.html" class="text-white m-l-10"><span class="fa fa-plus-circle p-r-5"></span>Entry a Product</a>
+        </div>
+        
+        <div class="dropdown">
+          <div class="pull-left">
+            <a class="dropdown-default btn-dropdown-toggle p-b-10 p-l-5 p-t-20 p-r-15 text-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="">Message <span class="caret"></span></a>
+            <ul class="dropdown-menu" class="text-master" role="menu">
+              <li><a href="user_create_message.html"><span class="pg-mail p-r-5"></span> Sent a Message</a></li>
+              <li><a href="user_view_inbox.html"><span class="pg-inbox p-r-5"></span> View Inbox</a></li>
+            </ul>
+          </div>
+          <div class="pull-left">
+            <a class="dropdown-default btn-dropdown-toggle p-b-10 p-l-5 p-t-20 p-r-15 text-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="">Manage Your Products <span class="caret"></span></a>
+              <ul class="dropdown-menu" class="text-master" role="menu">
+                <li><a href="user_listing_analysis.html"><span class="fa fa-area-chart p-r-5"></span> View Listing Analysis</a></li>
+                <li><a href="user_listing.html"><span class="fa fa-file p-r-5"></span> View my Products</a></li>
+              </ul>
+          </div>
+        <div class="pull-right">
+          <!-- START User Info-->
+          <div class="visible-lg visible-md m-t-10">
+            <div class="pull-left p-r-10 p-t-10 fs-16 font-heading">
+              <span class="semi-bold text-white">User</span>
+            </div>
+            <div class="pull-right">
+              <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="thumbnail-wrapper d32 circular inline m-t-5">
+                <img src="images/user.png" alt="" data-src="images/user.png" data-src-retina="images/user.png" width="32" height="32">
+            </span>
+              </button>
+              <ul class="dropdown-menu profile-dropdown" role="menu">
+                <li><a href="#"><i class="pg-settings_small"></i> Settings</a>
+                </li>
+                <li><a href="#"><i class="pg-outdent"></i> Feedback</a>
+                </li>
+                <li><a href="#"><i class="pg-signals"></i> Help</a>
+                </li>
+                <li class="bg-master-lighter">
+                  <a href="public_login.html" class="clearfix">
+                    <span class="pull-left">Logout</span>
+                    <span class="pull-right"><i class="pg-power"></i></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- END User Info-->
+        </div>
+        </div>
+      </div>
+    </div>
+
+<div class="page-content-wrapper">
+  <div class="content">
+    <div class="social-wrapper">
+      <div class="social " data-pages="social">
+        <div class="jumbotron" data-pages="parallax" data-social="cover">
+          <div class="cover-photo">
+            <img alt="Cover photo" src="images/bg-blue.jpg" />
+          </div>
+          <div class="container-fluid container-fixed-lg sm-p-l-20 sm-p-r-20">
+            <div class="inner">
+              <div class="pull-bottom bottom-left m-b-40">
+                <h5 class="text-white no-margin">We sell products with the greatest qualities</h5>
+                <h1 class="text-white no-margin">Manage your <span class="semi-bold">Products</span> here</h1>
+              </div>
+            </div>
+            <div class="top-left m-t-80 m-l-30">
+                <img src="images/mitologo2.png" />
+            </div>
+          </div>
+        </div>
+        <div class="feed" style="overflow: hidden;">
+          <div class="day no-margin">
+            <div class="card no-border full-width">
+              <div class="row">
+                <div class="bg-master-lightest">
+                  <div class="container-fluid sm-p-l-20 sm-p-r-20 p-t-10 p-b-25">
+                    <div class="inner">
+                      <h3 class="m-l-100">Your Products List</h3><hr />
+                      <div class="row m-l-60 m-r-60">
+                        <div class="col-md-3 col-sm-6">
+                          <div class="card share" data-social="item">
+                            <div class="circle" data-toggle="tooltip" title="Label" data-container="body">
+                            </div>
+                            <div class="card-header clearfix">
+                              &nbsp;
+                            </div>
+                            <div class="card-description">
+                              <div class="text-center m-r-20 m-l-20">
+                                <span class="fa fa-plus-circle fa-5x"></span>
+                                <p>
+                                  Add a pipe to your listing and get started selling it
+                                </p>
+                                <a class="btn btn-cons btn-primary" href="user_create_listing.html">Add a Pipe Now</a>
+                              </div>
+                            </div>
+                            <div class="card-footer clearfix">
+                              &nbsp;
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                          <div class="card share  col1" data-social="item">
+                            <div class="circle" data-toggle="tooltip" title="Label" data-container="body">
+                            </div>
+                            <div class="card-header clearfix">
+                              <h5>Pipe #1</h5>
+                              <h6>Your Pipe Description Below</h6>
+                            </div>
+                            <div class="card-description">
+                              <div class="text-center m-r-30 m-l-30">
+                                <img src="images/tubing3.jpg" width="50" height="200" style="border-radius: 100px;" />
+                              </div>
+                            </div>
+                            <div class="card-footer clearfix">
+                              <h5>Description :</h5>
+                              <p>
+                                Product Type : Pup Joints<br>
+                                OD : 4.3 <br>
+                                Weight : 500 grams <a href="user_listing.html" class="pull-right text-complete">View Individual</a>
+                              </p>
+                            </div>
+                                <div class="btn-group btn-group-justified">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-default">
+                                      <span class="p-t-5 p-b-5">
+                                                            <i class="fa fa-star fs-15"></i>
+                                                        </span>
+                                      <br>
+                                      <span class="fs-11 font-montserrat text-uppercase">Favourites</span>
+                                    </button>
+                                  </div>
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-info">
+                                      <span class="p-t-5 p-b-5">
+                                                            <i class="fa fa-arrow-circle-right fs-15"></i>
+                                                        </span>
+                                      <br>
+                                      <span class="fs-11 font-montserrat text-uppercase">Compare</span>
+                                    </button>
+                                  </div>
+                                </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                          <div class="card share  col1" data-social="item">
+                            <div class="circle" data-toggle="tooltip" title="Label" data-container="body">
+                            </div>
+                            <div class="card-header clearfix">
+                              <h5>Pipe #2</h5>
+                              <h6>Your Pipe Description Below</h6>
+                            </div>
+                            <div class="card-description">
+                              <div class="text-center m-r-30 m-l-30">
+                                <img src="images/coupling1.jpg" width="50" height="200" style="border-radius: 100px;" />
+                              </div>
+                            </div>
+                            <div class="card-footer clearfix">
+                              <h5>Description :</h5>
+                              <p>
+                                Product Type : Pup Joints<br>
+                                OD : 4.3 <br>
+                                Weight : 500 grams <a href="user_listing.html" class="pull-right text-complete">View Individual</a>
+                              </p>
+                            </div>
+                                <div class="btn-group btn-group-justified">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-default">
+                                      <span class="p-t-5 p-b-5">
+                                                            <i class="fa fa-star fs-15"></i>
+                                                        </span>
+                                      <br>
+                                      <span class="fs-11 font-montserrat text-uppercase">Favourites</span>
+                                    </button>
+                                  </div>
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-info">
+                                      <span class="p-t-5 p-b-5">
+                                                            <i class="fa fa-arrow-circle-right fs-15"></i>
+                                                        </span>
+                                      <br>
+                                      <span class="fs-11 font-montserrat text-uppercase">Compare</span>
+                                    </button>
+                                  </div>
+                                </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                          <div class="card share  col1" data-social="item">
+                            <div class="circle" data-toggle="tooltip" title="Label" data-container="body">
+                            </div>
+                            <div class="card-header clearfix">
+                              <h5>Pipe #3</h5>
+                              <h6>Your Pipe Description Below</h6>
+                            </div>
+                            <div class="card-description">
+                              <div class="text-center m-r-30 m-l-30">
+                                <img src="images/sample3.jpg" width="50" height="200" style="border-radius: 100px;" />
+                              </div>
+                            </div>
+                            <div class="card-footer clearfix">
+                              <h5>Description :</h5>
+                              <p>
+                                Product Type : Pup Joints<br>
+                                OD : 4.3 <br>
+                                Weight : 500 grams <a href="user_listing.html" class="pull-right text-complete">View Individual</a>
+                              </p>
+                            </div>
+                                <div class="btn-group btn-group-justified">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-default">
+                                      <span class="p-t-5 p-b-5">
+                                                            <i class="fa fa-star fs-15"></i>
+                                                        </span>
+                                      <br>
+                                      <span class="fs-11 font-montserrat text-uppercase">Favourites</span>
+                                    </button>
+                                  </div>
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-info">
+                                      <span class="p-t-5 p-b-5">
+                                                            <i class="fa fa-arrow-circle-right fs-15"></i>
+                                                        </span>
+                                      <br>
+                                      <span class="fs-11 font-montserrat text-uppercase">Compare</span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="bg-master-lighter">
+                  <div class="container-fluid sm-p-l-20 sm-p-r-20 p-t-10 p-b-25">
+                    <div class="inner">
+                      <h3 class="m-l-100">Listing Analyisis</h3><hr />
+
+                      <div class="panel panel-featured m-r-20">
+                        <div class="panel-heading">
+                          <div class="panel-title">
+                            Your Listing Analysis
+                          </div>
+                          <div class="btn-group pull-right m-b-10">
+                            <a type="button" class="btn btn-default" href="">Delete Product <span class="fa fa-trash"></span></a>
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                              <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                              <li><a href="#">Settings</a>
+                              </li>
+                              <li><a href="#">Help</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="clearfix"></div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                              <table class="table table-hover" id="basicTable">
+                                <thead>
+                                  <tr>
+                                    <!-- NOTE * : Inline Style Width For Table Cell is Required as it may differ from user to user
+                                  Comman Practice Followed
+                                  -->
+                                    <th style="width:1%">
+                                      &nbsp;
+                                    </th>
+                                    <th style="width:20%">Product</th>
+                                    <th style="width:20%">No of View</th>
+                                    <th style="width:15%">No of Enquiries</th>
+                                    <th style="width:15%">No of Sales</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td class="v-align-middle">
+                                      <div class="checkbox ">
+                                        <input type="checkbox" value="3" id="checkbox1">
+                                        <label for="checkbox1"></label>
+                                      </div>
+                                    </td>
+                                    <td class="v-align-middle">
+                                      <p>Product #1</p>
+                                    </td>
+                                    <td class="v-align-middle ">
+                                      <p>235</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                      <p>24</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                      <p>234</p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="v-align-middle">
+                                      <div class="checkbox ">
+                                        <input type="checkbox" value="3" id="checkbox2">
+                                        <label for="checkbox2"></label>
+                                      </div>
+                                    </td>
+                                    <td class="v-align-middle">
+                                      <p>Product #2</p>
+                                    </td>
+                                    <td class="v-align-middle ">
+                                      <p>325</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                      <p>12</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                      <p>543</p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="v-align-middle">
+                                      <div class="checkbox ">
+                                        <input type="checkbox" value="3" id="checkbox3">
+                                        <label for="checkbox3"></label>
+                                      </div>
+                                    </td>
+                                    <td class="v-align-middle">
+                                      <p>Product #3</p>
+                                    </td>
+                                    <td class="v-align-middle ">
+                                      <p>4423</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                      <p>133</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                      <p>342</p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="v-align-middle">
+                                      <div class="checkbox ">
+                                        <input type="checkbox" value="3" id="checkbox4">
+                                        <label for="checkbox4"></label>
+                                      </div>
+                                    </td>
+                                    <td class="v-align-middle">
+                                      <p>Product #4</p>
+                                    </td>
+                                    <td class="v-align-middle ">
+                                      <p>1124</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                      <p>345</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                      <p>12</p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="v-align-middle">
+                                      <div class="checkbox ">
+                                        <input type="checkbox" value="3" id="checkbox5">
+                                        <label for="checkbox5"></label>
+                                      </div>
+                                    </td>
+                                    <td class="v-align-middle">
+                                      <p>Product #5</p>
+                                    </td>
+                                    <td class="v-align-middle ">
+                                      <p>778</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                      <p>33</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                      <p>234</p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="v-align-middle">
+                                      <div class="checkbox ">
+                                        <input type="checkbox" value="3" id="checkbox6">
+                                        <label for="checkbox6"></label>
+                                      </div>
+                                    </td>
+                                    <td class="v-align-middle">
+                                      <p>Product #6</p>
+                                    </td>
+                                    <td class="v-align-middle ">
+                                      <p>112</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                      <p>134</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                      <p>3325</p>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid container-fixed-lg footer">
+    <div class="copyright sm-text-center">
+      <p class="small no-margin pull-left sm-pull-reset">
+        <span class="pull-left b-r b-dashed b-grey p-r-5"><img src="images/icon.png"></span>
+        <span class="hint-text p-l-5">Copyright &copy; 2017 </span>
+        <span class="font-montserrat">INOSOFT</span>.
+        <span class="hint-text">All rights reserved. </span>
+        <span class="sm-block"><a href="#" class="m-l-10 m-r-10">Terms of use</a> | <a href="#" class="m-l-10">Privacy Policy</a></span>
+      </p>
+      <p class="small no-margin pull-right sm-pull-reset">
+        <a href="#">Hand-crafted</a> <span class="hint-text">&amp; Made with Heart</span>
+      </p>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
+
+    <script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/modernizr.custom.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/bootstrapv3/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery/jquery-easy.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-unveil/jquery.unveil.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-bez/jquery.bez.min.js"></script>
+    <script src="assets/plugins/jquery-ios-list/jquery.ioslist.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-actual/jquery.actual.min.js"></script>
+    <script src="assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/select2/js/select2.full.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/classie/classie.js"></script>
+    <script src="assets/plugins/switchery/js/switchery.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-datatable/media/js/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-datatable/extensions/TableTools/js/dataTables.tableTools.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-datatable/media/js/dataTables.bootstrap.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-datatable/extensions/Bootstrap/jquery-datatable-bootstrap.js" type="text/javascript"></script>
+    <script type="text/javascript" src="assets/plugins/datatables-responsive/js/datatables.responsive.js"></script>
+    <script type="text/javascript" src="assets/plugins/datatables-responsive/js/lodash.min.js"></script>
+    <!-- END VENDOR JS -->
+    <!-- BEGIN CORE TEMPLATE JS -->
+    <script src="pages/js/pages.min.js"></script>
+    <!-- END CORE TEMPLATE JS -->
+    <!-- BEGIN PAGE LEVEL JS -->
+    <script src="assets/js/tables.js" type="text/javascript"></script>
+    <script src="assets/js/scripts.js" type="text/javascript"></script>
+</body>
+</html>
